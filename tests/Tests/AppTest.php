@@ -119,37 +119,4 @@ class AppTest extends WebTestCase{
         return $app;
     }
 
-    /**
-     * Provides all valid application URLs.
-     *
-     * @return array The list of all valid application URLs.
-     */
-    public function provideUrlsValid()
-    {
-        return array(
-            array('/'),
-            array('/login'),
-            array('/admin'),
-            array('/link/add'),
-            array('/api/links'),
-            array('/api/link/1'),
-        );
-    }
-
-    /**
-     * Provides all invalid application URLs.
-     *
-     * @return array The list of all valid application URLs.
-     */
-    public function provideUrlsInvalid()
-    {
-        return array(
-            array('/link/1'),
-            array('/user/1'),
-            array('/admin/link/1/edit'),
-            array('/admin/user/add'),
-            array('/admin/user/1/edit'),
-            array('admin/user/1/delete'),
-        );
-    }
 }
